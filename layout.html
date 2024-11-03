@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Conteúdo Multimídia</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">EduMultimídia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="layout.html">Sistema Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Sistema de Gestão de Conteúdo Multimídia para Educação</h1>
+    <form id="contentForm">
+      <input type="text" id="title" class="form-control my-2" placeholder="Título do Conteúdo" required>
+      <textarea id="description" class="form-control my-2" placeholder="Descrição" required></textarea>
+      <input type="file" id="file" class="form-control my-2" accept=".pdf, .docx, .jpg, .jpeg, .png, .jfif, .gif, .mp3, .wav, .mp4, .avi" required>
+
+      <button type="submit" class="btn btn-primary">Adicionar Conteúdo</button>
+    </form>
+
+    <div id="contentCards" class="row mt-4"></div>
+  </div>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
